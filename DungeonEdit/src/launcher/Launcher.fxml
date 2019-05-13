@@ -5,6 +5,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="launcher.Controller">
     <children>
-        <Button fx:id="button" layoutX="140.0" layoutY="88.0" onAction="#handleButtonAction" text="New" />
+        <Button fx:id="button" layoutX="140.0" layoutY="88.0" onAction="#handleButtonAction" text="Lancer" />
+        
     </children>
 </AnchorPane>

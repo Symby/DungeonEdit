@@ -124,19 +124,22 @@ public class gridDisplay extends javax.swing.JPanel {
     }
     
     public void sauvegarder() throws FileNotFoundException, IOException, ClassNotFoundException{
-        File fichier = new File("sav0.ser");
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fichier));
+        FileOutputStream ostream = new FileOutputStream("sav1.ser");
+        ObjectOutputStream oos = new ObjectOutputStream(ostream);
         oos.writeObject(Grid);
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fichier));
-        Grid = (Grille)ois.readObject();
+        oos.flush();
+        ostream.close();
         repaint();
         
     }
     
     public void charger() throws FileNotFoundException, IOException, ClassNotFoundException{
-        File fichier = new File("sav0.ser");
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fichier));
-        Grid = (Grille)ois.readObject();
+        File fichier = new File("sav1.ser");
+        FileInputStream istream = new FileInputStream(fichier);
+        ObjectInputStream ois = new ObjectInputStream(istream);
+        Grid = (Grille) ois.readObject();
+        ois.close();
+        istream.close();
         repaint();
     }
     /**
