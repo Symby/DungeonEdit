@@ -44,16 +44,6 @@ public class IHM extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
         gridDisplay1 = new dungeoneditor.gridDisplay();
-        jPanel1 = new javax.swing.JPanel();
-        JButtonMur = new javax.swing.JButton();
-        jButtonSol = new javax.swing.JButton();
-        jButtonPorte = new javax.swing.JButton();
-        jButtonGomme = new javax.swing.JButton();
-        jButtonBat = new javax.swing.JButton();
-        jButtonSlime = new javax.swing.JButton();
-        jButtonScorpion = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuFile = new javax.swing.JMenu();
         jMenuNew = new javax.swing.JMenuItem();
@@ -61,6 +51,16 @@ public class IHM extends javax.swing.JFrame {
         jMenuSave = new javax.swing.JMenuItem();
         jMenuQuit = new javax.swing.JMenuItem();
         jMenuEdit = new javax.swing.JMenu();
+        jMenuOutils = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuMur = new javax.swing.JMenuItem();
+        jMenuSol = new javax.swing.JMenuItem();
+        jMenuPorte = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuBat = new javax.swing.JMenuItem();
+        jMenuSlime = new javax.swing.JMenuItem();
+        jMenuScorpion = new javax.swing.JMenuItem();
+        jMenuGomme = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -83,7 +83,7 @@ public class IHM extends javax.swing.JFrame {
         gridDisplay1.setLayout(gridDisplay1Layout);
         gridDisplay1Layout.setHorizontalGroup(
             gridDisplay1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 705, Short.MAX_VALUE)
+            .addGap(0, 717, Short.MAX_VALUE)
         );
         gridDisplay1Layout.setVerticalGroup(
             gridDisplay1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -91,111 +91,6 @@ public class IHM extends javax.swing.JFrame {
         );
 
         jScrollPane2.setViewportView(gridDisplay1);
-
-        JButtonMur.setText("Mur");
-        JButtonMur.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                JButtonMurActionPerformed(evt);
-            }
-        });
-
-        jButtonSol.setText("Sol");
-        jButtonSol.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonSolActionPerformed(evt);
-            }
-        });
-
-        jButtonPorte.setText("Porte");
-        jButtonPorte.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonPorteActionPerformed(evt);
-            }
-        });
-
-        jButtonGomme.setText("Gomme");
-        jButtonGomme.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonGommeActionPerformed(evt);
-            }
-        });
-
-        jButtonBat.setText("Chauve-souris");
-        jButtonBat.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonBatActionPerformed(evt);
-            }
-        });
-
-        jButtonSlime.setText("Slime");
-        jButtonSlime.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonSlimeActionPerformed(evt);
-            }
-        });
-
-        jButtonScorpion.setText("Scorpion");
-        jButtonScorpion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonScorpionActionPerformed(evt);
-            }
-        });
-
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        jButton2.setText("jButton2");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jButtonSol, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(JButtonMur, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButtonPorte, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButtonGomme, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButtonBat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButtonSlime, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButtonScorpion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(JButtonMur)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonSol)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonPorte)
-                .addGap(43, 43, 43)
-                .addComponent(jButtonBat)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonSlime)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonScorpion)
-                .addGap(58, 58, 58)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButtonGomme)
-                .addContainerGap())
-        );
 
         jMenuFile.setText("File");
 
@@ -210,6 +105,11 @@ public class IHM extends javax.swing.JFrame {
 
         jMenuOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
         jMenuOpen.setText("Open");
+        jMenuOpen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuOpenActionPerformed(evt);
+            }
+        });
         jMenuFile.add(jMenuOpen);
 
         jMenuSave.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
@@ -235,20 +135,91 @@ public class IHM extends javax.swing.JFrame {
         jMenuEdit.setText("Edit");
         jMenuBar1.add(jMenuEdit);
 
+        jMenuOutils.setText("Outils");
+
+        jMenu2.setText("Construction");
+
+        jMenuMur.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, 0));
+        jMenuMur.setText("Mur");
+        jMenuMur.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuMurActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuMur);
+
+        jMenuSol.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, 0));
+        jMenuSol.setText("Sol placeholder");
+        jMenuSol.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuSolActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuSol);
+
+        jMenuPorte.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, 0));
+        jMenuPorte.setText("Porte");
+        jMenuPorte.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuPorteActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuPorte);
+
+        jMenuOutils.add(jMenu2);
+
+        jMenu3.setText("Créatures");
+
+        jMenuBat.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, 0));
+        jMenuBat.setText("Chauve-souris");
+        jMenuBat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuBatActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuBat);
+
+        jMenuSlime.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, 0));
+        jMenuSlime.setText("Slime");
+        jMenuSlime.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuSlimeActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuSlime);
+
+        jMenuScorpion.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, 0));
+        jMenuScorpion.setText("Scorpions");
+        jMenuScorpion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuScorpionActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuScorpion);
+
+        jMenuOutils.add(jMenu3);
+
+        jMenuGomme.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, 0));
+        jMenuGomme.setText("Gomme");
+        jMenuGomme.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuGommeActionPerformed(evt);
+            }
+        });
+        jMenuOutils.add(jMenuGomme);
+
+        jMenuBar1.add(jMenuOutils);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 602, Short.MAX_VALUE))
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jScrollPane2)
         );
 
@@ -261,41 +232,6 @@ public class IHM extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuQuitActionPerformed
 
     private void jMenuSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSaveActionPerformed
-    }//GEN-LAST:event_jMenuSaveActionPerformed
-
-    private void jButtonPorteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPorteActionPerformed
-        gridDisplay1.setOutil("porte");
-    }//GEN-LAST:event_jButtonPorteActionPerformed
-
-    private void jButtonSolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSolActionPerformed
-        gridDisplay1.setOutil("sol");
-    }//GEN-LAST:event_jButtonSolActionPerformed
-
-    private void JButtonMurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JButtonMurActionPerformed
-        gridDisplay1.setOutil("mur");
-    }//GEN-LAST:event_JButtonMurActionPerformed
-
-    private void jButtonGommeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGommeActionPerformed
-        gridDisplay1.setOutil("gomme");
-    }//GEN-LAST:event_jButtonGommeActionPerformed
-
-    private void jButtonBatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBatActionPerformed
-        gridDisplay1.setOutil("chauve-souris");
-    }//GEN-LAST:event_jButtonBatActionPerformed
-
-    private void jButtonScorpionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonScorpionActionPerformed
-        gridDisplay1.setOutil("scorpion");
-    }//GEN-LAST:event_jButtonScorpionActionPerformed
-
-    private void jButtonSlimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSlimeActionPerformed
-        gridDisplay1.setOutil("slime");
-    }//GEN-LAST:event_jButtonSlimeActionPerformed
-
-    private void jMenuNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuNewActionPerformed
-        nouveau.setVisible(true);
-    }//GEN-LAST:event_jMenuNewActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
             gridDisplay1.sauvegarder();
         } catch (IOException ex) {
@@ -303,9 +239,21 @@ public class IHM extends javax.swing.JFrame {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(IHM.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jMenuSaveActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jMenuNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuNewActionPerformed
+        nouveau.setVisible(true);
+    }//GEN-LAST:event_jMenuNewActionPerformed
+
+    private void jMenuBatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuBatActionPerformed
+        gridDisplay1.setOutil("chauve-souris");
+    }//GEN-LAST:event_jMenuBatActionPerformed
+
+    private void jMenuSlimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSlimeActionPerformed
+        gridDisplay1.setOutil("slime");
+    }//GEN-LAST:event_jMenuSlimeActionPerformed
+
+    private void jMenuOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuOpenActionPerformed
         try {
             gridDisplay1.charger();
         } catch (IOException ex) {
@@ -313,7 +261,27 @@ public class IHM extends javax.swing.JFrame {
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(IHM.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jMenuOpenActionPerformed
+
+    private void jMenuGommeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuGommeActionPerformed
+        gridDisplay1.setOutil("gomme");
+    }//GEN-LAST:event_jMenuGommeActionPerformed
+
+    private void jMenuSolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuSolActionPerformed
+        gridDisplay1.setOutil("sol");
+    }//GEN-LAST:event_jMenuSolActionPerformed
+
+    private void jMenuMurActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuMurActionPerformed
+        gridDisplay1.setOutil("mur");
+    }//GEN-LAST:event_jMenuMurActionPerformed
+
+    private void jMenuPorteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuPorteActionPerformed
+        gridDisplay1.setOutil("porte");
+    }//GEN-LAST:event_jMenuPorteActionPerformed
+
+    private void jMenuScorpionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuScorpionActionPerformed
+        gridDisplay1.setOutil("scorpion");
+    }//GEN-LAST:event_jMenuScorpionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -351,25 +319,25 @@ public class IHM extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton JButtonMur;
     private dungeoneditor.gridDisplay gridDisplay1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButtonBat;
-    private javax.swing.JButton jButtonGomme;
-    private javax.swing.JButton jButtonPorte;
-    private javax.swing.JButton jButtonScorpion;
-    private javax.swing.JButton jButtonSlime;
-    private javax.swing.JButton jButtonSol;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuBat;
     private javax.swing.JMenu jMenuEdit;
     private javax.swing.JMenu jMenuFile;
+    private javax.swing.JMenuItem jMenuGomme;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuMur;
     private javax.swing.JMenuItem jMenuNew;
     private javax.swing.JMenuItem jMenuOpen;
+    private javax.swing.JMenu jMenuOutils;
+    private javax.swing.JMenuItem jMenuPorte;
     private javax.swing.JMenuItem jMenuQuit;
     private javax.swing.JMenuItem jMenuSave;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JMenuItem jMenuScorpion;
+    private javax.swing.JMenuItem jMenuSlime;
+    private javax.swing.JMenuItem jMenuSol;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
